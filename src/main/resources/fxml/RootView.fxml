@@ -13,7 +13,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 
-<GridPane fx:id="root" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vgap="5.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/22">
+<GridPane fx:id="root" hgap="5.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" vgap="5.0" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1">
   <columnConstraints>
     <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="100.0" />
       <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
@@ -58,7 +58,7 @@
       </VBox>
       <TextArea fx:id="MensajeTextArea" prefHeight="200.0" prefWidth="200.0" promptText="Mensaje" GridPane.columnSpan="2" GridPane.rowIndex="5" />
       <Label alignment="CENTER_RIGHT" text="Servidor SMTP:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
-      <CheckBox mnemonicParsing="false" onAction="#onServidorTrue" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <CheckBox fx:id="smtpCheckBox" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
       <Label alignment="CENTER_RIGHT" text="Remitente (From):" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
       <Label alignment="CENTER_RIGHT" text="Destinatario (To):" GridPane.halignment="RIGHT" GridPane.rowIndex="3" />
       <Label alignment="CENTER_RIGHT" text="Asunto (Subject):" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
